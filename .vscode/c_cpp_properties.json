@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Windows STM32",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "${env:ARM_DIR}/arm-none-eabi-gcc.exe"
+        }
+    ],
+    "version": 4
+}

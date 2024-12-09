@@ -1,0 +1,13 @@
+{
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "cortex-debug.variableUseNaturalFormat": false,
+    "files.associations": {
+        "*.pde": "cpp",
+        "main.h": "c"
+    },
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "never",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
+}

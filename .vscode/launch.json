@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "projectName": "App",
+    "configurations": [
+        {
+			"name": "openocd",
+			"type": "cortex-debug",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"servertype": "openocd",
+            "device": "STM32F103",
+            "interface": "swd",
+			"executable": "${workspaceRoot}/build/app.elf",
+            "preLaunchTask": "Build app", // see tasks.json
+            "showDevDebugOutput": "raw",
+            "liveWatch": { "enabled": true, "samplesPerSecond": 5 },
+            "svdFile": "${workspaceRoot}/Startup/STM32F103.svd",
+			"configFiles": [
+				"${env:OPENOCD_DIR}/interface/stlink-v2.cfg",
+				"${env:OPENOCD_DIR}/target/stm32f1x.cfg"
+			]
+		}
+    ]
+}
+//env:OPENOCD_DIR
